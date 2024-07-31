@@ -1,0 +1,77 @@
+.container-fluid {
+    display: flex;
+}
+
+.card {
+    top: 70px;
+    left: 0px;
+    transition: (-50px, -50px);
+    margin: auto;
+    width: 450px;
+    box-shadow: 2px 3px 2px 3px rgb(195, 194, 194);
+    /* background-color: rgba(65, 64, 64, 0.5); */
+    height: auto;
+    position: relative;
+
+}
+
+.card>form {
+    padding: 20px;
+}
+
+.card-head {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.material-symbols-rounded {
+    background-color: gainsboro;
+}
+
+.material-symbols-outlined {
+    margin-top: 5px;
+}
+
+.material-symbols-outlined,
+.card-title {
+    margin-left: 10px;
+    float: left;
+}
+
+.material-symbols-outlined,
+.card-title {
+    margin-left: 10px;
+    float: left;
+}
+
+.text-danger {
+    margin-left: 60px;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(41, 59, 225);
+}
+
+[disabled] {
+    background-color: rgb(109, 153, 247);
+    opacity: 0.8px;
+}
+
+.footer>p {
+    display: block;
+}
+
+p>a {
+    text-decoration: none;
+}
+
+p>a:hover {
+    text-decoration: underline;
+}

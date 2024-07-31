@@ -1,0 +1,108 @@
+<div class="container-fluid">
+    <section class="card">
+        <form action="" class="row g-3" [formGroup]='signupForm' (ngSubmit)="signUserDeatils()">
+            <div class="card-head">
+                <span class="material-symbols-outlined">person_pin_circle</span>
+                <h2 class="card-title">Sign-up</h2>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fName" placeholder="Enter first name" name="fName" required
+                        formControlName="fName" class="form-control" required>
+                </div>
+                <div class="has-validation text-danger"
+                    *ngIf="signupForm.controls['fName'].invalid && (signupForm.controls['fName'].touched)">
+                    <small *ngIf="signupForm.controls['fName'].errors?.['required']">First name is
+                        required</small>
+                    <small *ngIf="signupForm.controls['fName'].errors?.['pattern']">Enter valid name</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lName" placeholder="Enter last name" name="lName" required
+                        formControlName="lName" class="form-control" required>
+                </div>
+                <div class="has-validation text-danger"
+                    *ngIf="signupForm.controls['lName'].invalid && (signupForm.controls['lName'].touched)">
+                    <small *ngIf="signupForm.controls['lName'].errors?.['required']">Last name is
+                        required</small>
+                    <small *ngIf="signupForm.controls['lName'].errors?.['pattern']">Enter valid name</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email: </label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" placeholder="Enter email" name="email" required
+                        formControlName="email" class="form-control" required>
+                </div>
+                <div class="has-validation text-danger"
+                    *ngIf="signupForm.controls['email'].invalid && (signupForm.controls['email'].touched)">
+                    <small *ngIf="signupForm.controls['email'].errors?.['required']">Email is required</small>
+                    <small *ngIf="signupForm.controls['email'].errors?.['email']">Email should valid</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mobileNo">Mobile Number: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mobileNo" placeholder="Enter mobile no" name="mobileNo" required
+                        minlength="6" class="form-control" formControlName="mobileNo">
+                </div>
+                <div class="has-validation text-danger"
+                    *ngIf="signupForm.controls['mobileNo'].invalid && (signupForm.controls['mobileNo'].touched)">
+                    <small *ngIf="signupForm.controls['mobileNo'].errors?.['required']">Please enter mobile no</small>
+                    <small *ngIf="signupForm.controls['mobileNo'].errors?.['pattern']">Plese enter valid mobile
+                        number</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="password">Password: </label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="password" placeholder="Enter password" name="password" required
+                        minlength="6" class="form-control" formControlName="password">
+                </div>
+                <div class="has-validation text-danger"
+                    *ngIf="signupForm.controls['password'].invalid && (signupForm.controls['password'].touched)">
+                    <small *ngIf="signupForm.controls['password'].errors?.['required']">Please enter password</small>
+                    <small *ngIf="signupForm.controls['password'].errors?.['minlength']">Password must have minmum 6
+                        characters</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="confirmPassword">Confirm Password: </label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="confirmPassword" placeholder="confirm password" name="confirmPassword"
+                        required minlength="6" class="form-control" formControlName="confirmPassword">
+                </div>
+                <div class="has-validation text-danger" *ngIf="confirmpassword.invalid && (confirmpassword.touched)">
+                    <small *ngIf="signupForm.get('confirmPassword')?.errors?.['required']">Please re-enter
+                        password</small>
+                    <small
+                        *ngIf="signupForm.get('confirmPassword')?.errors?.['mismatch'] && signupForm.get('confirmPassword')?.touched">Password
+                        do not
+                        match</small>
+
+                </div>
+            </div>
+            <div class="input-group col-80">
+                <button type="submit" [disabled]="signupForm.invalid">Sign-up</button>
+            </div>
+            <div class="footer">
+                <p>Already have an account? <a routerLink="/login">Login</a> here</p>
+            </div>
+        </form>
+    </section>
+</div>

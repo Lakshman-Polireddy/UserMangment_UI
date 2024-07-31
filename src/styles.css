@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: black;
+    opacity: 0.1px;
+    background-image: url('assets/bg3.avif');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.logout {
+    flex: 1 1 auto;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.u-profile {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.u-name {
+    padding: 5px;
+
+}

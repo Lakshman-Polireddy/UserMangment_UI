@@ -1,0 +1,13 @@
+<mat-card appearance="outlined" mat-dialog-title>
+    <div class="b-outline">
+        <img src="../../assets/userImg.png" alt="" mat-card-avatar class="img">
+
+    </div>
+    <mat-card-content mat-dialog-content>
+        <p><strong>Name:</strong> {{ user.name }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+    </mat-card-content>
+</mat-card>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Close</button>
+</div>

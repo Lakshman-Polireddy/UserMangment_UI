@@ -1,0 +1,17 @@
+.img {
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 0%;
+}
+
+.b-outline {
+    border: 1px solid rgb(218, 215, 215);
+    padding: 5px;
+}
+
+mat-card {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}

@@ -1,0 +1,119 @@
+.card {
+    top: 20px;
+    padding: 20px;
+    left: 0px;
+    margin: auto;
+    width: 70%;
+    border: 2px solid gainsboro;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-title {
+    text-align: center;
+    padding: 10px;
+}
+
+.card-head {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.material-symbols-outlined {
+    margin-top: 12px;
+}
+
+.material-symbols-outlined,
+.card-title {
+    margin-left: 5px;
+    float: left;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-80 {
+    width: 97%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.text-danger {
+    margin-left: 28%;
+    padding: 10px;
+}
+
+.footer {
+    margin-left: 26%;
+    margin-top: 10px;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 3px;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(41, 59, 225);
+}
+
+[disabled] {
+    background-color: rgb(109, 153, 247);
+    opacity: 0.8px;
+}
+
+p>a {
+    text-decoration: none;
+}
+
+p>a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .text-danger,
+    .footer {
+        margin-left: 0px;
+    }
+
+}

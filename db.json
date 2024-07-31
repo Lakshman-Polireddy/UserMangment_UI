@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": "7fbf",
+      "fName": "Lakshman",
+      "lName": "Polireddy",
+      "mobileNo": "8464964276",
+      "email": "lakshmanpolireddy045@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "853b",
+      "fName": "Ramu",
+      "lName": "Polireddy",
+      "mobileNo": "9876543210",
+      "email": "ramu@gmail.com",
+      "password": "ramu@123"
+    },
+    {
+      "id": "2208",
+      "fName": "Ravi",
+      "lName": "Veerala",
+      "mobileNo": "7890654321",
+      "email": "ravi@gmail.com",
+      "password": "ravi123"
+    },
+    {
+      "id": "18f5",
+      "fName": "Ramana",
+      "lName": "Polireddy",
+      "mobileNo": "8796543210",
+      "email": "ramana@gmail.com",
+      "password": "ramana@123"
+    },
+    {
+      "id": "b5d7",
+      "fName": "KOMMANA",
+      "lName": "YUVARAJ",
+      "mobileNo": "6302608593",
+      "email": "kommanayuvaraj@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "9bf7",
+      "fName": "Saikiran",
+      "lName": "Makireddy",
+      "mobileNo": "9087654321",
+      "email": "saikiran@gmail.com",
+      "password": "sai@123"
+    },
+    {
+      "id": "b217",
+      "fName": "Kumari",
+      "lName": "Polireddy",
+      "mobileNo": "7865432109",
+      "email": "kumari@gmail.com",
+      "password": "kumari@123"
+    },
+    {
+      "id": "9fb1",
+      "fName": "Ramu",
+      "lName": "Polireddy",
+      "mobileNo": "9876543210",
+      "email": "ramu@gmail.com",
+      "password": "123456"
+    }
+  ]
+}
