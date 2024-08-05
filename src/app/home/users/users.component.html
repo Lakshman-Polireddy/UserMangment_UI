@@ -1,6 +1,6 @@
-<app-home *ngIf="isOpend"></app-home>
-<table class="table table-bordered table-responsive table-striped">
-    <thead class="bg-primary">
+<h3 class="text-center m-3 border mx-5 p-2" style="width: 90%;">USERS DATA</h3>
+<table class="table table-bordered table-responsive table-striped m-4">
+    <thead>
         <tr>
             <th>Id</th>
             <th>First Name</th>
@@ -19,6 +19,7 @@
         </tr>
     </tbody>
 </table>
+<p class="mx-4">TOTAL NUMBER OF USERS: <strong>{{usersList.length}}</strong></p>
 <!-- <mat-sidenav-container>
     <mat-sidenav-content>
         <table class="table table-bordered table-responsive table-striped">

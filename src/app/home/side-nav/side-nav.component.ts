@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-nav.component.css']
 })
 export class SideNavComponent {
+  [x: string]: any;
 
+  @Output() closeSideNav = new EventEmitter();
+
+  onToggleClose() {
+    this.closeSideNav.emit();
+  }
 }

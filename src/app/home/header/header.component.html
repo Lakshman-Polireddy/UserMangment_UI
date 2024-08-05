@@ -1,5 +1,5 @@
-<!-- <mat-toolbar color="primary" *ngIf="userName != ''">
-    <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+<mat-toolbar color="primary" *ngIf="userName ? show : hide">
+    <button mat-icon-button (click)="openSidenav()"><mat-icon>menu</mat-icon></button>
     <div class="logo">Dashboard</div>
     <div class="logout"></div>
     <button mat-button (click)="openUserProfile()" class="u-profile">
@@ -11,7 +11,7 @@
     </button>
 </mat-toolbar>
 
-<mat-sidenav-container class="sidenav-wrapper ">
+<!-- <mat-sidenav-container class="sidenav-wrapper ">
     <mat-sidenav mode="side" opened="true" class="sidenav" #nav>
         <a routerLink="/users" class="primary">
             <button mat-button>
