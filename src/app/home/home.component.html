@@ -1,3 +1,4 @@
+
 <mat-toolbar color="primary" *ngIf="userName != ''">
     <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
     <div class="logo">Dashboard</div>
@@ -43,3 +44,53 @@
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
+<div class="header">
+    <h2 class="text-center mt-4">WELCOME TO DASBOARD</h2>
+</div>
+<div class="content">
+    <div class="card">
+        <div class="card-header">
+            <h2>8</h2>
+            <p>Users</p>
+        </div>
+        <div class="icon">
+            <span class="material-symbols-outlined">
+                group
+            </span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2>133</h2>
+            <p>Likes</p>
+        </div>
+        <div class="icon">
+            <span class="material-symbols-outlined">
+                thumb_up
+            </span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2>87</h2>
+            <p>comments</p>
+        </div>
+        <div class="icon">
+            <span class="material-symbols-outlined">
+                forum
+            </span>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2>2</h2>
+            <p>Recently joined</p>
+        </div>
+        <div class="icon-4">
+            <span class="material-symbols-outlined">
+                check_circle
+            </span>
+        </div>
+    </div>
+</div>
+

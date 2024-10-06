@@ -44,11 +44,4 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  isOpend: boolean = false;
-
-  getToggleOn() {
-    this.isOpend = !this.isOpend;
-  }
-
-
 }

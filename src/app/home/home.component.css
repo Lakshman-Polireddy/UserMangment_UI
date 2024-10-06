@@ -1,24 +1,33 @@
-.sidenav-wrapper {
-    position: absolute;
-    top: 60px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #eee;
+.header {
+    margin-bottom: 40px;
 }
 
-.mat-sidenav {
-    padding: 20px;
-    width: 200px;
-}
-
-.mat-sidenav-content {
+.content {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
+    flex-direction: row;
+    position: relative;
+    margin-left: 150px;
 }
 
-.material-symbols-outlined {
+.card {
+    width: 200px;
+    background-color: rgb(9, 9, 148);
+    color: white;
     padding: 10px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+}
+
+.icon-4 {
+    position: absolute;
+    top: 40%;
+    left: 70%;
 }

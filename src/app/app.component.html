@@ -1,4 +1,13 @@
-<div>
-  <!-- <app-home (loggedUser)="loggedUserData(userNameToDisplay)" [userNameWithDecorator]="userNameToDisplay"></app-home> -->
-  <router-outlet></router-outlet>
-</div>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <app-side-nav (closeSideNav)="sidenav.close()"></app-side-nav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-header (SideNavToggle)="sidenav.toggle()"></app-header>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>

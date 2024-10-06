@@ -1,0 +1,28 @@
+.sidenav-wrapper {
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+}
+
+.mat-toolbar {
+    width: 100%;
+}
+
+.mat-sidenav {
+    padding: 20px;
+    width: 200px;
+}
+
+.mat-sidenav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.material-symbols-outlined {
+    padding: 10px;
+}
