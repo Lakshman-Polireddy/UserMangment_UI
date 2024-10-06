@@ -1,3 +1,49 @@
+
+<mat-toolbar color="primary" *ngIf="userName != ''">
+    <button mat-icon-button (click)="nav.toggle()"><mat-icon>menu</mat-icon></button>
+    <div class="logo">Dashboard</div>
+    <div class="logout"></div>
+    <button mat-button (click)="openUserProfile()" class="u-profile">
+        <mat-icon>person</mat-icon>
+        <span class="u-name">{{userName}}</span>
+    </button>
+    <button mat-button type="button" (click)="onlogOut()">
+        <mat-icon>logout</mat-icon>Logout
+    </button>
+</mat-toolbar>
+
+<mat-sidenav-container class="sidenav-wrapper ">
+    <mat-sidenav mode="side" opened="true" class="sidenav" #nav>
+        <a routerLink="/users" class="primary">
+            <button mat-button>
+                <mat-icon>group</mat-icon>
+                <span class="p-2">Users List</span>
+            </button>
+        </a>
+        <a class="primary" routerLink="/about-us">
+            <button mat-button>
+                <mat-icon>info</mat-icon>
+                <span class="p-2">About-Us</span>
+            </button>
+        </a>
+        <a class="primary">
+            <button mat-button routerLink="/contact">
+                <mat-icon>phone</mat-icon>
+                <span class="p-2">Contact us</span>
+            </button>
+        </a>
+        <a class="primary">
+            <button mat-button>
+                <mat-icon>settings</mat-icon>
+                <span class="p-2">Settings</span>
+            </button>
+        </a>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <h1>Dashboard</h1>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
 <div class="header">
     <h2 class="text-center mt-4">WELCOME TO DASBOARD</h2>
 </div>
@@ -47,3 +93,4 @@
         </div>
     </div>
 </div>
+
