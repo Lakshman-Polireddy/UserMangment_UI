@@ -29,6 +29,7 @@ import { SideNavComponent } from './home/side-nav/side-nav.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +41,7 @@ import { SideNavComponent } from './home/side-nav/side-nav.component';
     HeaderComponent,
     AboutUsComponent,
     ContactComponent,
-    SideNavComponent
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
