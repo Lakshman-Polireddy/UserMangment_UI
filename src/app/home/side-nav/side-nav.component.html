@@ -1,5 +1,5 @@
 <!-- <mat-sidenav-container class="sidenav-wrapper ">
-    <mat-sidenav mode="side" opened="true" class="sidenav">
+    <mat-sidenav mode="side" opened="true" class="sidenav" #nav>
         <a routerLink="/users" class="primary">
             <button mat-button>
                 <mat-icon>group</mat-icon>
@@ -26,24 +26,3 @@
         </a>
     </mat-sidenav>
 </mat-sidenav-container> -->
-
-<mat-nav-list class="sidenav-list">
-    <h3 class="p-3">Menu Items</h3>
-    <a mat-list-item routerLink="/users" (click)="onToggleClose()">
-        <mat-icon>group</mat-icon>
-        <span class="p-2">Users List</span>
-    </a>
-    <a mat-list-item routerLink="/about-us" (click)="onToggleClose()">
-        <mat-icon>info</mat-icon>
-        <span class="p-2">About-Us</span>
-    </a>
-    <a mat-list-item routerLink="/contact" (click)="onToggleClose()">
-        <mat-icon>phone</mat-icon>
-        <span class="p-2">Contact us</span>
-    </a>
-    <a mat-list-item routerLink="/settings" (click)="onToggleClose()">
-        <mat-icon>settings</mat-icon>
-        <span class="p-2">Settings</span>
-    </a>
-
-</mat-nav-list>

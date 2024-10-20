@@ -1,5 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { AuthService } from '../../services/auth.services';
+import { Component, ElementRef, EventEmitter, OnInit, Output } from '@angular/core';
+import { AuthService } from '../services/auth.services';
+import { User } from '../interface/auth';
 
 @Component({
   selector: 'app-users',
@@ -9,8 +10,6 @@ import { AuthService } from '../../services/auth.services';
 export class UsersComponent implements OnInit {
   // Mat-table
   usersList: any;
-  @Output() usersData: EventEmitter<any> = new EventEmitter<any>();
-
   columns: ['id', 'fName', 'lName', 'email', 'mobileNo']
 
   constructor(private authService: AuthService) {
@@ -25,7 +24,6 @@ export class UsersComponent implements OnInit {
 
   ngOnInit(): void {
     this.usersList;
-    this.usersData.emit('Users data')
   }
 
   isOpend: boolean = false;

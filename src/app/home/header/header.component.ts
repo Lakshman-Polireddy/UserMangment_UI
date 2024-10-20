@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnChanges, Output, SimpleChanges } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { UserProfileDialogComponent } from 'src/app/user-profile-dialog/user-profile-dialog.component';
@@ -10,10 +10,6 @@ import { UserProfileDialogComponent } from 'src/app/user-profile-dialog/user-pro
 })
 export class HeaderComponent {
   userName: string;
-  show: boolean = true;
-  hide: boolean = false;
-
-
 
   constructor(private router: Router, public dialog: MatDialog) { }
   onlogOut() {
@@ -28,14 +24,6 @@ export class HeaderComponent {
     this.userName = sStorageGetName;
 
   }
-
-  // checkUserLogged() {
-  //   if (this.userName != '') {
-  //     this.userName;
-  //   } else {
-  //     this.hide;
-  //   }
-  // }
 
   //UserProfile-dialog
   openUserProfile(): void {
@@ -55,18 +43,6 @@ export class HeaderComponent {
   }
 
 
-  isOpend: boolean = false;
 
-  getToggleOn() {
-    this.isOpend = !this.isOpend;
-  }
-
-  @Output() SideNavToggle = new EventEmitter();
-
-  openSidenav() {
-    this.SideNavToggle.emit();
-  }
 
 }
-
-

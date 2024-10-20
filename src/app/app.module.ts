@@ -16,16 +16,15 @@ import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { MatButtonModule } from '@angular/material/button';
-import { UsersComponent } from './home/users/users.component';
+import { UsersComponent } from './users/users.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatDialogModule } from '@angular/material/dialog';
 import { UserProfileDialogComponent } from './user-profile-dialog/user-profile-dialog.component';
 import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './home/header/header.component';
 import { AboutUsComponent } from './home/about-us/about-us.component';
-import { ContactComponent } from './home/contact/contact.component';
+import { ContactComponent } from './contact/contact.component';
 import { SideNavComponent } from './home/side-nav/side-nav.component';
-import { SettingsComponent } from './home/settings/settings.component';
 
 
 
@@ -41,8 +40,7 @@ import { SettingsComponent } from './home/settings/settings.component';
     HeaderComponent,
     AboutUsComponent,
     ContactComponent,
-    SideNavComponent,
-    SettingsComponent
+    SideNavComponent
   ],
   imports: [
     BrowserModule,

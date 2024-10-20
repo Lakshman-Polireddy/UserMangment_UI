@@ -13,6 +13,12 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   loggedUserName: string;
 
+  // @Output() loggedUser = new EventEmitter<string>;
+
+  // onLoggedUser() {
+  //   this.loggedUser.emit(this.loggedUserName)
+  // }
+
   @ViewChild('myEmail') myInputRef: ElementRef<HTMLInputElement>;
 
   getInputValue() {
